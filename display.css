@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",Tahoma,sans-serif;
+}
+table{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3%;
+    border-collapse: collapse;
+    width: 90%;
+    height: 200px;
+    border: 1px solid #bdc3;
+}
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+thead{
+    background-color: #16a085;
+    color: #fff;
+}
+td button{
+    padding: 5px;
+    margin: 4px 7px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+td button:nth-child(1){
+    background-color: rgb(85, 85, 190);
+}
+td button:nth-child(1):hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+td button:nth-child(2){
+    background-color: rgb(206, 65, 65);
+}
+td button:nth-child(2):hover{
+    background-color: transparent;
+    border: 2px solid red;
+}
+td button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+td button:nth-child(1):hover a{
+    color: blue;
+}
+td button:nth-child(2):hover a{
+    color: red;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+.buttons button{
+    margin-top:0;
+    border-radius: 6px;
+    padding: 5px 12px;
+    background-color: #16a085;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid transparent;
+}
+.buttons button:hover{
+    background-color: transparent;
+    border: 2px solid #16a085;
+}
+.buttons button:hover a{
+    color: #16a085;
+}
+.buttons button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 4%;
+}
+@media(max-width:600px)
+{
+    .buttons{
+        margin-top: 0;
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 2%;
+        margin-bottom: 10px;
+    }
+}
+/* Heading */

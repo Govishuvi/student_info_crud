@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:rgb(116, 153, 221);
+}
+#contact{
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #777;
+    max-width: fit-content;
+    min-width: 400px;
+    padding: 25px;
+}
+#contact h3{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+#contact input{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 5px 10px;
+    outline: none;
+}
+#contact input:hover{
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px black;
+}
+#contact button{
+    color: white;
+    background-color: green;
+    padding: 7px 14px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 3px black;
+}
+#contact button:hover{
+    background-color: transparent;
+    border: 2px solid green;
+}
